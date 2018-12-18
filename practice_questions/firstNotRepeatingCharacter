@@ -1,0 +1,19 @@
+// https://app.codesignal.com/interview-practice/task/uX5iLwhc6L5ckSyNC
+function firstNotRepeatingCharacter(s) {
+    let storageObj = {};
+    for (let i = 0; i < s.length; i++) {
+        let char = s.charAt(i);
+        if (storageObj[char]) {
+            storageObj[char]++;
+        } else {
+            storageObj[char] = 1;
+        }
+    }
+    
+    for (let key of Object.keys(storageObj)) {
+        if (storageObj[key] == 1) {
+            return key;
+        } 
+    }
+    return '_';
+}
