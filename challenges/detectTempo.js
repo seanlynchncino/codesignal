@@ -1,4 +1,4 @@
-//
+// https://app.codesignal.com/challenge/s4P7vyy9XafQaDomS
 detectTempo = waveform => {
     let beats = getBeats(waveform);
     let tempo = Infinity;
